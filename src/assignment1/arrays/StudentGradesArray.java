@@ -1,6 +1,6 @@
 package assignment1.arrays;
 
-public class StudentGrades {
+public class StudentGradesArray {
 	
 	private double[] grades;
 	
@@ -12,15 +12,15 @@ public class StudentGrades {
 		this.grades = grades;
 	}
 
-	public StudentGrades() {
+	public StudentGradesArray() {
 		grades = new double[10];
 	}
 	
-	public StudentGrades(int classSize) {
+	public StudentGradesArray(int classSize) {
 		grades = new double[classSize];
 	}
 	
-	public StudentGrades(double[] grades) {
+	public StudentGradesArray(double[] grades) {
 		this.grades = grades;
 	}
 	
@@ -29,14 +29,15 @@ public class StudentGrades {
 		for (int i = 0; i < grades.length; i++) {
 			totalGrade += grades[i];
 		}
-		return totalGrade/(double)grades.length;
+		
+		return grades.length == 0 ? 0 : totalGrade/(double)grades.length;
 	}
 	
 	public double getGrade(int studentNo) {
 		double returnValue = 0;
 		if(studentNo > 0) {
-			if(studentNo < grades.length) {
-				returnValue = grades[studentNo + 1];
+			if(studentNo <= grades.length) {
+				returnValue = grades[studentNo - 1];
 			}
 		}
 		return returnValue;
@@ -44,7 +45,7 @@ public class StudentGrades {
 	
 	public void addGrade(int studentNo, double grade) {
 		if(studentNo > 0) {
-			if(studentNo < grades.length) {
+			if(studentNo <= grades.length) {
 				grades[studentNo - 1] = grade;
 			}
 		}
