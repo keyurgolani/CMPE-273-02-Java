@@ -11,5 +11,14 @@ public class StudentSample {
 		this.id = id;
 		this.dept = dept;
 	}
+	
+	@Override
+	public String toString() {
+		String toString = "";
+		toString = toString + "Name:" + "\t" + "\t" + this.name + "\n";
+		toString = toString + "ID:" + "\t" + "\t" + this.id + "\n";
+		toString = toString + "Department:" + "\t" + dept + "\n";
+		return toString;
+	}
 
 }
