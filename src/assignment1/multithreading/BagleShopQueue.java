@@ -4,7 +4,7 @@ public class BagleShopQueue {
 	
 	public static void main(String[] args) {
 		/*
-		 * Topic: Multithreading in Java
+		 * Topic: Queues in Java
 		 * Problem: In a bagle shop, customers keep coming in on their
 		 * 		own accord and need to be served in the same order as
 		 * 		they arrive in the shop. But however, it is necessary

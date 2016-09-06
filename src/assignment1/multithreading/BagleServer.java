@@ -2,6 +2,8 @@ package assignment1.multithreading;
 
 import java.util.Queue;
 
+import utility.ProjectUtility;
+
 public class BagleServer implements Runnable {
 
 	@Override
@@ -12,7 +14,7 @@ public class BagleServer implements Runnable {
 				for (int i = 0; i < 5; i++) {
 					String currentCustomer = customersInLine.poll();
 					if (currentCustomer != null) {
-						System.out.println("Serve: " + currentCustomer);
+						System.out.println(ProjectUtility.getTimeStamp() + "\t" + "Serve: " + currentCustomer);
 					} else {
 						break;
 					}
