@@ -33,5 +33,24 @@ public class PostfixExpressionStack {
 		}
 		return expression.equals("") ? 0 : (validExpression ? valueStack.pop() : -1);
 	}
+	
+	public static void main(String[] args) {
+		/*
+		 * Topic: Stacks in Java
+		 * Problem: Calculating the output of postfix expressions is an essential problem
+		 * 		since postfix expressions are usually how the compilers and kernels deal
+		 * 		with the expressions.
+		 * Solution: Solving postfix expression requires the saving of values until an
+		 * 		operator is encountered and then fetching the saved values in a reverse
+		 * 		order to process them using the encountered operator. Stack gives the
+		 * 		exact same functionality necessary for this operation. Stack allows one
+		 * 		value to be pushed at a time into it. And out of the pushed values, one
+		 * 		value to be fetched at a time in reverse order to the order they were pushed.
+		 */
+		
+		String postfixExpression = "15+13+*253+*-1-329**33*+-";
+		System.out.println("Postfix Expression (" + postfixExpression + ") evaluates to " + calculatePostFix(postfixExpression) + ".");
+		
+	}
 
 }
