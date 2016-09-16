@@ -1,4 +1,4 @@
-package assignment1.multithreading;
+package assignment1.queues;
 
 import java.util.LinkedList;
 import java.util.Queue;

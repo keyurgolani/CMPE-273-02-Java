@@ -1,4 +1,4 @@
-package assignment1.multithreading;
+package assignment1.queues;
 
 public class BagleShopQueue {
 	

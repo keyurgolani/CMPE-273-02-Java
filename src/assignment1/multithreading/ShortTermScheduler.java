@@ -1,4 +1,4 @@
-package assignment1.queues;
+package assignment1.multithreading;
 
 import java.util.Queue;
 
