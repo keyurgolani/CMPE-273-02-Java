@@ -21,7 +21,7 @@ public class ProcessWaitingQueue implements Runnable {
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		while(true) {
-			System.out.println("Enter burst time for next arriving process: ");
+			System.out.println("Enter burst time in seconds for next arriving process: ");
 			waitingQueue.add(sc.nextLong());
 		}
 	}

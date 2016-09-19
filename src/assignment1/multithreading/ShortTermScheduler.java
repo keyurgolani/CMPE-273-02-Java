@@ -16,7 +16,7 @@ public class ShortTermScheduler implements Runnable {
 				for (int i = 0; i < 1; i++) {					
 					if (currentProcess != null) {
 						System.out.println(ProjectUtility.getTimeStamp() + "\t" + "Executing Process P" + p++ + " for burst time of " + currentProcess);
-						Thread.sleep(currentProcess);
+						Thread.sleep(currentProcess * 1000);
 					} else {
 						break;
 					}

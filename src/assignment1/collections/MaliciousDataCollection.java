@@ -65,7 +65,10 @@ public class MaliciousDataCollection {
 			maliciousDataCollection.addData(dataRecord);
 			maliciousDataCollection.addData(dataRecord);
 		}
+		System.out.println("Total Size of Dataset: " + maliciousDataCollection.getTrainingData().size());
+		int i = 0;
 		for (Iterator iterator = maliciousDataCollection.trainingData.iterator(); iterator.hasNext();) {
+			System.out.print("Record " + i++ + ":\t");
 			Vector<Double> dataRecord = (Vector<Double>) iterator.next();
 			System.out.println(dataRecord);
 			
